@@ -11,7 +11,7 @@ const schema = new mongoose.Schema({
         type:String,
         required:true
     },
-    birthDate:Date,
+    birthDate: Date,
     adopted:{
         type:Boolean,
         default:false
@@ -23,6 +23,6 @@ const schema = new mongoose.Schema({
     image:String
 })
 
-const petModel = mongoose.model(collection,schema);
+const petModel = mongoose.model(collection, schema);
 
 export default petModel;
